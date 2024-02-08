@@ -46,9 +46,9 @@ io.on("connection", (socket) => {
 
 const PORT = 4000;
 server.listen(PORT, () => {
-  console.log(`Servidor de Socket.IO esta escuchando en el puerto ${PORT}`);
+  console.log(`Servidor esta escuchando en el puerto ${PORT}`);
 });
 
 io.on("disconnet", (socket) => {
-  console.log("No conecto", socket);
+  console.log("Desconectado", socket);
 });
